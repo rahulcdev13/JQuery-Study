@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery</title>
+    <script>
+      $(document).ready(function () {
+        $("#btn").click(function () {
+          $("h1,h2").addClass("demo demo1");
+        });
+        
+      });
+    </script>
+    <style>
+      .demo{
+        background-color: red;
+        color: white;
+        padding: 10px;
+        border: 1px solid black;
+      } 
+      .demo1{
+        padding: 10px;
+        border: 1px solid black;
+      } 
+    </style>
+  </head>
+  <body>
+     <h1>Hello javascript with jquery-3</h1>
+     <h2>Hello javascript with jquery-3</h2>
+
+    <button id="btn">Add Class</button>
+  </body>
+</html>

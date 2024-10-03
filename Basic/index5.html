@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery</title>
+    <script>
+      $(document).ready(function () {
+        $("#text").click(function(){
+            alert($("#demo").text())
+        });
+        $("#html").click(function(){
+            alert($("#demo").html())
+        });
+      });
+    </script>
+    <style>
+      .demo * {
+        border: 1px solid black;
+        padding: 15px;
+        margin: 15px;
+      }
+       
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to jquery</h1>
+    <div class="demos">
+      <p id="demo"> 
+        this is the text contect how to get elemt <strong>GET TEXT</strong> and
+        <em>HTML Contect</em>
+        but
+      </p>
+    <button id="text">Get text</button>
+    <button id="html">Get Html Content</button>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery</title>
+    <script>
+      $(document).ready(function(){
+        // $("li").children().css({"font-size":"20px","color":"red","border":"2px solid red"})
+        $("div").find("li").css({"font-size":"20px","color":"red","border":"2px solid red"})
+        
+    })
+    </script>   
+    <style>
+    .descendents *{
+        display: block;
+        border: 2px dashed black;
+        padding: 10px;
+        margin: 10px,
+     }
+    </style> 
+  </head>
+  <body>
+    <h1>Welcome to jquery</h1>
+    <div class="descendents">
+        <div style="width: 800px;">Great Grand Parent 
+            <ul> ul Grand Parent
+                <li>li Parent
+                    <span>Child span1</span><br />
+                    <span>Child span2</span>
+                </li><br />
+                <li>li</li>
+            </ul>
+        </div>
+        
+    </div>
+  </body>
+</html>

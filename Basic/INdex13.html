@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery</title>
+    <script>
+      $(document).ready(function () {
+        $("#btn").click(function () {
+          var txt = "";
+          txt += "Width is = " + $(".demo").width() + "<br/>";
+          txt += "Height is = " + $(".demo").height() + "<br/>";
+          txt += "innerWidth is = " + $(".demo").innerWidth() + "<br/>";
+          txt += "innerHeight is = " + $(".demo").innerHeight() + "<br/>";
+          txt += "outerWidth is = " + $(".demo").outerWidth() + "<br/>";
+          txt += "outerHeight is = " + $(".demo").outerHeight() + "<br/>";
+
+          $(".demo").html(txt).css({"font-size":"25px"});
+        });
+      });
+    </script>
+    <style>
+      .demo {
+        background-color: red;
+        color: white;
+        height: 200px;
+        padding: 20px;
+        width: 400px;
+        border: 1px solid chartreuse;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="demo"></div>
+    <br />
+    <button id="btn">Get Width</button>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery</title>
+    <script>
+      $(document).ready(function () {
+        $("h4").prevAll().css({
+          "font-size": "20px",
+          color: "red",
+          border: "2px dashed black",
+        });
+      });
+    </script>
+    <style>
+      .siblings * {
+        display: block;
+        border: 1px solid black;
+        padding: 15px;
+        margin: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to jquery</h1>
+    <div class="siblings">
+      <div style="width: 800px">
+        Parent
+        <p>p</p>
+        <p>p2</p>
+        <p>p3</p>
+        <ul> ul
+          <li>li</li>
+        </ul>
+        <h1>h1</h1>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          alert("Font Size is " + $("h1").css("font-size"));
+          alert("Font color is " + $("h2").css("color"));
+          alert("Font padding is " + $("h3").css("padding"));
+          $("h2").css("color","black");
+
+        });
+      });
+    </script>
+    <style>
+      h2,h1,h3 {
+        color: white;
+        background-color: red;
+        padding: 20px;
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Heading 1</h1>
+    <p>This is demo text.</p>
+    <h2>Heading 2</h2>
+    <p>This is another demo text.</p>
+    <h2>Heading 2</h2>
+    <p>This is yet another demo text.</p>
+    <h3>Heading 4</h3>
+    <p>This is yet another demo text.</p>
+
+    <button>Get CSS Property</button>
+    
+  </body>
+</html>
